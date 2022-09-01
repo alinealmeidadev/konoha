@@ -1,26 +1,38 @@
+@import url('https://fonts.googleapis.com/css2? family= BenchNine & family= Gloria+Hallelujah & family= Josefin+Sans & family= Rock+Salt & family= Special+Elite & display= troca');
+/* família de fontes: 'BenchNine', sem serifa;
+font-family: 'Gloria Hallelujah', cursiva;
+família de fontes: 'Josefin Sans', sem serifa;
+font-family: 'Rock Salt', cursiva;
+font-family: 'Elite Especial', cursiva; */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-
 body{
-    background-color: #000;
+    background-image: url(../);
 }
 
 header{
-    background-color: #f37e2f;
     display: flex;
+    backdrop-filter: blur(1px);
+    width: 100%;
     justify-content: space-around;
+    position: absolute;
+    /* background: rgb(245,155,69);
+    background: linear-gradient(0deg, #f5cead7a 0%, #ea822cba 28%, #d16205 100%);*/
+    
 }
+
 
 .logo {
-   width: 25%;
+    margin-top: 10px;
+    width:0px;
 }
     
-
 .lista-menu{
-    display: flex;
+    display: flex; 
     width: 300px;
     height: 80px;
     justify-content: space-between;
@@ -28,16 +40,21 @@ header{
     align-items: center;
 }
 
-
 li {
     color: #000;
     font-size: 20px;
 }
 
-.li a :hover{
+/* li :hover > a {
     color: #FFFFF;
-}
+} */
 
+.img-principal {
+    width:  100%;
+    background-color: orange;
+    background-image: url(../konoha.png);
+    background-repeat: no-repeat;
+}
 
 h2 {
     color: #FFFFFF;
@@ -52,7 +69,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 #curiosidades div {
@@ -72,13 +88,11 @@ main {
 
 #video {
     display: flex;
-    f
 }
 
 h3{
     color:#063d0f; 
 }
-
 
 footer {
     background-color: #f37e2f;
