@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? family= BenchNine & family= Gloria+Hallelujah & family= Josefin+Sans & family= Rock+Salt & family= Special+Elite & display= troca');
-/* família de fontes: 'BenchNine', sem serifa;
-font-family: 'Gloria Hallelujah', cursiva;
-família de fontes: 'Josefin Sans', sem serifa;
-font-family: 'Rock Salt', cursiva;
-font-family: 'Elite Especial', cursiva; */
+/* font-family: 'BenchNine', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Special Elite', cursive; */
 
 * {
     margin: 0;
@@ -19,56 +19,67 @@ body {
 }
 
 header {
-    display: flex;
-    backdrop-filter: blur(1px);
-    width: 100%;
-    justify-content: space-around;
+    display: block;
+    backdrop-filter: blur(0.5px);
+    width: 400px;
+    height: 100vh;
     position: absolute;
+    margin:50px;
 }
 
+
+.logo {
+    justify-content: center;
+}
 .img-logo {
     margin-top: 10px;
     width: 70px;
 }
 
-.lista-menu {
-    display: flex;
-    width: 300px;
-    height: 80px;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
+nav {
+    width: 400px;
+    height: 400px;
 }
 
+ul {
+    list-style: none;
+
+}
 li {
-    color: #000;
-    font-size: 20px;
-    font-family: 'Elite Especial', cursiva;
+    
+    
 }
 
 li a {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'BenchNine', sans-serif;
+    padding: 30px;
     text-decoration: none;
-    border: 3px solid rgba(0, 0, 0, 0.096);
-    border-radius: 20px;
-    padding: 5px 10px;
 }
 
 
 li a:visited {
-    text-decoration-color: none;
+    text-decoration: none;
 }
 
 li a:hover {
-    color: #FFF;
+
     transition: 0s all;
     transform: 1ms ease-in;
     position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.767);
+    border: 2px solid rgba(20, 18, 18, 0.767);
     border-radius: 20px;
     padding: 5px 10px;
     background: linear-gradient(0deg, #eb934b 0%, #bd997b52 50%, #eb934b 100%);
 }
 
+.img-nav {
+    width: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
 .img-principal {
     background-color: orange;
     background-image: url(../img/konoha.png);
@@ -77,10 +88,11 @@ li a:hover {
     height: 100vh;
 }
 
-/* #curiosidades, #video {
+
+ #curiosidades, #video {
     width: 100vw;
     height: 100vh;
-}  */
+}  
 
 
 h2 {
