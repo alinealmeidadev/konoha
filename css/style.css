@@ -85,7 +85,7 @@ li a:hover {
 
 h2 {
     color: #FFFFFF;
-    padding: 200px;
+    padding: 50px;
 
 }
 
@@ -95,18 +95,11 @@ h2 {
     gap: 50px;
 }
 
-.curiosidades div {
-    width: 250px;
-    height: 450px;
-    perspective: 700px;
-    padding: 20px; 
-}
-
-/* .card {
+.card {
     width: 300px;
     height: 500px;
     perspective: 700px;
-} */
+} 
 
 .frente, .verso {
     width: 100%;
@@ -119,7 +112,7 @@ h2 {
 
 .frente {
     z-index: 1;
-    background-image: url(../img/senju-uchiha.webp);
+    background-image: url('../img/naruto-sasuke.jpg');
     background-position: center;
 }
 
