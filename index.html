@@ -8,22 +8,22 @@
     <title>Konoha</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/logo.png">
-
 </head>
 
 <body>
     <header>
 
         <div class="logo">
-            <img class="img-logo" src="./img/logo.png" width="1000px" alt="Logo.png da Cidade">
-            <p class="texto-logo">Bem vindo a Konoha!</p>
+            <img class="img-logo" src="./img/logo.png" width="100px" alt="Logo.png da Cidade">
+            <h1>Bem vindo a <span>Konoha!
+            </span></h1>
         </div>
 
         <nav>
-            <ul class="lista-menu">
-                <li><a href="#header"><img class="img-nav" src="./img/home.png" alt="">Home</a></li>
-                <li><a href="#curiosidades"><img class="img-nav" src="./img/curiosidade.png" alt="">Curiosidades</a></li>
-                <li><a href="#video"><img class="img-nav" src="./img/video.png" alt="">Vídeo</a></li>
+            <ul>
+                <li><a href="#header"><img class="img-nav" src="./img/home.png" alt="ícone de home">Home</a></li>
+                <li><a href="#curiosidades"><img class="img-nav" src="./img/curiosidade.png" alt="ícone tópicos">Curiosidades</a></li>
+                <li><a href="#video"><img class="img-nav" src="./img/video.png" alt="ícone de vídeo">Vídeo</a></li>
             </ul>
         </nav>
 
@@ -31,8 +31,9 @@
     </header>
 
 
-    <div class="img-principal">
-        <img src="" alt="">
+    <div id="cidade">
+        
+        <!-- <img class="img-konoha" src="./img/konoha.png" width="100%" alt="imagem com a cidade de Konoha ao fundo e o 7º hokage Naruto de costas"> -->
     </div>
 
     <!--    -----------------------------  -->
@@ -44,10 +45,10 @@
         <div class="curiosidades">
 
             <div class="card">
-                <div class="frente">
-                    
+                <div class="face front">
+                    <img src="./img/hashirama-madara.png" alt="">
                 </div>
-                <div class="verso">
+                <div class="face back fundacao">
                     <div class="texto">
                         <h3>FUNDAÇÃO</h3>
                         <p>No início dos tempos, durante a Era dos Estados Combatentes, os ninjas eram compostos por
@@ -62,10 +63,10 @@
                 </div>
             </div>
             <div class="card">
-                <div class="frente">
-
+                <div class="face front">
+                    <img src="./img/naruto-sasuke.jpg" alt="">
                 </div>
-                <div class="verso">
+                <div class="face back naruto-sasuke">
                     <div class="texto">
                         <h3>Naruto X Sasuke</h3>
                         <p>No início dos tempos, durante a Era dos Estados Combatentes, os ninjas eram compostos por
@@ -79,14 +80,14 @@
             </div>
 
             <div class="card">
-                <div class="frente">
-
+                <div class="face front">
+                    <img src="./img/pain.webp" alt="">
                 </div>
-                <div class="verso">
+                <div class="face back ataque-pain">
                     <div class="texto">
                         <h3>O ataque de Pain</h3>
                         <p>A aldeia da folha foi totalmente destruída durante o ataque de Pain, que procurava Naruto para capturar a Raposa de nove caldas e continuar seu plano de colocar o mundo dentro de um Genjutsu.</p>
-                        <p></p>Pain é considerado como um dos melhores de toda a saga Naruto, tem personagens e roteiros bem desenvolvidos e momentos marcantes para toda continuidade da história, além da evolução e amadurecimento do protagonista, que finalmente conquista o respeito e prestígio que sempre buscou. </p>
+                        <p>Pain é considerado como um dos melhores de toda a saga Naruto, tem personagens e roteiros bem desenvolvidos e momentos marcantes para toda continuidade da história, além da evolução e amadurecimento do protagonista, que finalmente conquista o respeito e prestígio que sempre buscou. </p>
                     </div>
                 </div>
             </div>
@@ -103,8 +104,11 @@
     </section>
 
     <footer>
-        <h2>Visite Konoha</h2>
-        <link rel="stylesheet" href="">
+
+        <ul class="ul-footer">
+            <li><a href="https://www.linkedin.com/in/alinealmeidadev/" target="_blank"><img src="./img/in.png" alt="Logo do Linkedin"></a></li>
+            <li><a href="https://github.com/alinealmeidadev" target="_blank"><img src="./img/gh.png" alt="Logo do GitHub">GitHub</a></li>
+        </ul>
 
     </footer>
 </body>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= BenchNine & family= Gloria+Hallelujah & family= Josefin+Sans & family= Rock+Salt & family= Special+Elite & display= troca');
+/* @import url('https://fonts.googleapis.com/css2? family= BenchNine & family= Gloria+Hallelujah & family= Josefin+Sans & family= Rock+Salt & family= Special+Elite & display= troca');
 /* font-family: 'BenchNine', sans-serif;
 font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Josefin Sans', sans-serif;
@@ -20,51 +20,56 @@ body {
 
 header {
     display: block;
-    backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(1.5px);
     width: 400px;
-    height: 100vh;
+    height: 500px;
     position: absolute;
-    margin:50px;
+    justify-content: space-around;
 }
-
 
 .logo {
-    justify-content: center;
+    display: block;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.logo h1 {
+    color: #FFFFFF;
+}
+
 .img-logo {
-    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 70px;
 }
 
-nav {
-    width: 400px;
-    height: 400px;
-}
 
-ul {
+/* .texto-logo{
+
+} */
+
+header ul {
     list-style: none;
-
-}
-li {
-    
-    
 }
 
-li a {
+
+
+header ul a {
     color: #ffffff;
     font-size: 30px;
     font-weight: 800;
     font-family: 'BenchNine', sans-serif;
-    padding: 30px;
+    row-gap: 100px;
     text-decoration: none;
 }
 
 
-li a:visited {
+header ul a:visited {
     text-decoration: none;
 }
 
-li a:hover {
+header ul a:hover {
 
     transition: 0s all;
     transform: 1ms ease-in;
@@ -72,28 +77,48 @@ li a:hover {
     border: 2px solid rgba(20, 18, 18, 0.767);
     border-radius: 20px;
     padding: 5px 10px;
-    background: linear-gradient(0deg, #eb934b 0%, #bd997b52 50%, #eb934b 100%);
+    background: linear-gradient(0deg, #eb934b49 0%, #ffffff38 50%, #eb934b49 100%);
 }
+
+nav {
+    width: 400px;
+    height: 50%;
+}
+
+
 
 .img-nav {
     width: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 10px;
 }
-.img-principal {
-    background-color: orange;
-    background-image: url(../img/konoha.png);
+
+
+#cidade{
+    background-image: url('../img/konoha.png');
     background-repeat: no-repeat;
-    width: auto;
-    height: 100vh;
+    background-size: 100%;
+    animation: myAnim 10s linear 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    30% {
+        background-position: left center;
+        background-size: 100%;
+    }
+    
+    100% {
+        background-position: left center;
+        background-size: 105%;
+    }
 }
 
 
- #curiosidades, #video {
+
+#cidade, #curiosidades, #video {
     width: 100vw;
     height: 100vh;
-}  
-
+}
 
 h2 {
     color: #FFFFFF;
@@ -101,19 +126,89 @@ h2 {
 
 }
 
+#curiosidades {
+    background-color: #000;
+}
 .curiosidades {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 50px;
+
 }
 
 .card {
     width: 300px;
     height: 500px;
-    perspective: 700px;
-} 
+    position: relative;
+}
 
-.frente, .verso {
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: perspective (700px) rotateY(-180deg);
+    box-shadow: 0 5px 5px #000;
+    z-index: 1;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .back {
+    transform: perspective (700px) rotateY(180deg);
+
+
+    text-align: center;
+
+}
+
+.card .fundacao {
+    background-color: rgb(69, 233, 178);
+}
+
+.card .naruto-sasuke {
+    background-color: rgb(94, 7, 105);
+}
+
+.card .ataque-pain {
+    background-color: rgb(41, 5, 5);
+}
+
+.card .texto {
+    padding: 20px;
+    color: #f3f3f3;
+}
+
+.card .texto h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: rgb(204, 101, 6);
+}
+
+.card:hover .front {
+    transform: perspective(700px) rotateY(180deg);
+}
+.card:hover .back {
+    transform: perspective(700px) rotateY(360deg);
+}
+
+
+/*
+.frente,
+.verso {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -124,7 +219,7 @@ h2 {
 
 .frente {
     z-index: 1;
-    background-image: url('../img/naruto-sasuke.jpg');
+   
     background-position: center;
 }
 
@@ -148,13 +243,12 @@ h2 {
     padding: 20px;
 }
 
-
-/* .curiosidades div:hover {
+.curiosidades div:hover {
     transform: scale(1.03);
     filter: brightness(130%);
-} */
+}  */
 
-/* .video {
+.video {
     display: flex;
 }
 
@@ -163,5 +257,10 @@ h3{
 }
 
 footer {
-    background-color: #f37e2f;
-}
+    height: 150px;
+    background-color: #ffffff;
+    background-image: url('../img/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+} 
