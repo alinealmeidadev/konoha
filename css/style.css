@@ -85,20 +85,28 @@ li a:hover {
 
 h2 {
     color: #FFFFFF;
-    margin: 50px;
+    padding: 200px;
+
 }
 
 .curiosidades {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 50px;
 }
 
-.card {
+.curiosidades div {
+    width: 250px;
+    height: 450px;
+    perspective: 700px;
+    padding: 20px; 
+}
+
+/* .card {
     width: 300px;
     height: 500px;
     perspective: 700px;
-}
+} */
 
 .frente, .verso {
     width: 100%;
@@ -133,11 +141,6 @@ h2 {
 
 .texto {
     padding: 20px;
-}
-
-.curiosidades div:hover {
-    transform: scale(1.03);
-    filter: brightness(130%);
 }
 
 
