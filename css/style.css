@@ -10,29 +10,29 @@ font-family: 'Elite Especial', cursiva; */
     padding: 0;
 }
 
-body{
-    background-image: url(../);
+html {
+    scroll-behavior: smooth;
 }
 
-header{
+body {
+    background-color: #000000;
+}
+
+header {
     display: flex;
     backdrop-filter: blur(1px);
     width: 100%;
     justify-content: space-around;
     position: absolute;
-    /* background: rgb(245,155,69);
-    background: linear-gradient(0deg, #f5cead7a 0%, #ea822cba 28%, #d16205 100%);*/
-    
 }
 
-
-.logo {
+.img-logo {
     margin-top: 10px;
-    width:0px;
+    width: 70px;
 }
-    
-.lista-menu{
-    display: flex; 
+
+.lista-menu {
+    display: flex;
     width: 300px;
     height: 80px;
     justify-content: space-between;
@@ -43,50 +43,110 @@ header{
 li {
     color: #000;
     font-size: 20px;
+    font-family: 'Elite Especial', cursiva;
 }
 
-/* li :hover > a {
-    color: #FFFFF;
-} */
+li a {
+    text-decoration: none;
+    border: 3px solid rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+
+li a:visited {
+    text-decoration-color: none;
+}
+
+li a:hover {
+    color: #FFF;
+    transition: 0s all;
+    transform: 1ms ease-in;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.767);
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: linear-gradient(0deg, #eb934b 0%, #bd997b52 50%, #eb934b 100%);
+}
 
 .img-principal {
-    width:  100%;
     background-color: orange;
-    background-image: url(../konoha.png);
+    background-image: url(../img/konoha.png);
     background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
 }
+
+/* #curiosidades, #video {
+    width: 100vw;
+    height: 100vh;
+}  */
+
 
 h2 {
     color: #FFFFFF;
     margin: 50px;
 }
 
-main {
-    margin: 100px 0 100px ;
-}
-
-#curiosidades, #video {
+.curiosidades {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
-#curiosidades div {
-    background-color: #f37e2f;
+.card {
     width: 300px;
     height: 500px;
-    border-radius: 25px;
-    color: #000;
-    margin: 30px;
-    padding: 20px;
-    border: 3px solid #ffffff;  
+    perspective: 700px;
 }
-#curiosidades div:hover {
+
+.frente, .verso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: 500ms;
+}
+
+.frente {
+    z-index: 1;
+    background-image: url(../img/senju-uchiha.webp);
+    background-position: center;
+}
+
+.verso {
+    background-color: rgb(172, 41, 41);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+
+.card:hover .frente {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.card:hover .verso {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.texto {
+    padding: 20px;
+}
+
+.curiosidades div:hover {
     transform: scale(1.03);
     filter: brightness(130%);
 }
 
-#video {
+
+/* .curiosidades div:hover {
+    transform: scale(1.03);
+    filter: brightness(130%);
+} */
+
+/* .video {
     display: flex;
 }
 
