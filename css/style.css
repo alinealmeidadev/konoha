@@ -50,11 +50,11 @@ header ul {
 }
 
 header ul a {
-    color: #f5dbca;
+    color: #000000;
     font-size: 25px;
     font-weight: 800;
     font-family: 'Skranji', cursive;
-    letter-spacing: 1cpx;
+    letter-spacing: 1px;
     row-gap: 100px;
     text-decoration: none;
 }
@@ -83,10 +83,11 @@ nav {
     width: 30px;
     padding-top: 5px;
     padding-right: 10px;
+    filter: brightness(0);
 }
 
 #cidade {
-    background-image: url('../img/konoha.png');
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/398925305501297776/64B863758E4A28B3E9C5CBCA1032A539EAC96681/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
     background-repeat: no-repeat;
     background-size: 100%;
 /*     animation: myAnim 10s linear 0s 1 normal forwards; */
@@ -137,7 +138,7 @@ h2 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 25px;
+    border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
     border: solid 2px #cc6506;
@@ -207,7 +208,7 @@ h3 {
 }
  
 footer {
-    height: 150px;
+    height: 70px;
     background-image: url('../img/footerkonoha.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -218,27 +219,24 @@ footer {
 }
 
 .ul-footer {
+    height: 100%;
     display: flex;
-    justify-content: right;
-    height: 150px;
-    align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: row;
     backdrop-filter: blur(2.5px);
-
+    align-items: center;
+    margin: 0 100px;
 
 }
 
 .ul-footer li {
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
     list-style: none;
-    margin: 20px;
-    gap: 15px;
+    margin: 0 10px;
 }
 
 footer li a {
     text-decoration: none;
+    filter: brightness(0);
 }
 
 
