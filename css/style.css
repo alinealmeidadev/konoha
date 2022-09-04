@@ -31,15 +31,14 @@ header {
 
 .logo h1 {
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Caesar Dressing', cursive, 'Arial';
     font-weight: 100;
 }
 
 .img-logo {
-    margin-left: auto;
-    margin-right: auto;
     width: 100px;
+    padding-left: 40px;
 }
 
 /* .texto-logo{
