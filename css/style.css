@@ -8,34 +8,38 @@ html {
 }
 
 body {
-    background-color: #000000;
-
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(83,41,7,1) 35%, rgba(191,86,0,1) 47%, rgba(191,86,0,1) 53%, rgba(83,41,7,1) 65%, rgba(0,0,0,1) 100%);
 }
 
 header {
     display: block;
-    backdrop-filter: blur(1.5px);
-    width: 400px;
-    height: 500px;
+    backdrop-filter: blur(0.5px);
+    width: 300px;
+    height: 400px;
     position: absolute;
-    justify-content: space-around;
+
+    margin: 20px 40px;
 }
 
 .logo {
     display: block;
+    width: 200px;
     height: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
 
 .logo h1 {
-    color: #FFFFFF;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Caesar Dressing', cursive, 'Arial';
+    font-weight: 100;
 }
 
 .img-logo {
     margin-left: auto;
     margin-right: auto;
-    width: 70px;
+    width: 100px;
 }
 
 /* .texto-logo{
@@ -47,10 +51,11 @@ header ul {
 }
 
 header ul a {
-    color: #ffffff;
-    font-size: 30px;
+    color: #f5dbca;
+    font-size: 25px;
     font-weight: 800;
-    font-family: 'BenchNine', sans-serif;
+    font-family: 'Skranji', cursive;
+    letter-spacing: 1cpx;
     row-gap: 100px;
     text-decoration: none;
 }
@@ -85,9 +90,9 @@ nav {
     background-image: url('../img/konoha.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    animation: myAnim 10s linear 0s 1 normal forwards;
+/*     animation: myAnim 10s linear 0s 1 normal forwards; */
 }
-
+/* 
 @keyframes myAnim {
     30% {
         background-position: left center;
@@ -98,7 +103,7 @@ nav {
         background-position: left center;
         background-size: 110%;
     }
-}
+} */
 
 
 #cidade, #curiosidades, #video {
@@ -114,10 +119,6 @@ h2 {
     letter-spacing: 5px;
 }
 
-#curiosidades {
-    background-color: #000;
-}
-
 .curiosidades {
     display: flex;
     align-items: center;
@@ -129,6 +130,7 @@ h2 {
     width: 300px;
     height: 500px;
     position: relative;
+
 }
 
 .card .face {
@@ -139,6 +141,7 @@ h2 {
     border-radius: 25px;
     overflow: hidden;
     transition: 0.5s;
+    border: solid 2px #cc6506;
 }
 
 .card .front {
@@ -160,7 +163,7 @@ h2 {
 }
 
 .card .fundacao {
-    background-color: rgb(69, 233, 178);
+    background-color: rgb(85, 107, 100);
 }
 
 .card .naruto-sasuke {
@@ -172,16 +175,20 @@ h2 {
 }
 
 .card .texto {
-    padding: 20px;
+    padding: 15px;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 .card .texto h3 {
     font-size: 30px;
-    margin-top: 20px;
+    font-family: 'Skranji', cursive;
+    margin-top: 10px;
     letter-spacing: 2px;
     color: #cc6506;
 }
+
 
 .card:hover .front {
     transform: perspective(700px) rotateY(180deg);
@@ -202,22 +209,23 @@ h3 {
  
 footer {
     height: 150px;
-    background-color: #ffffff;
     background-image: url('../img/footerkonoha.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    filter: blur(1);
     border-top: solid 2px #fff;
     margin-top: 50px;
+
     
 }
 
 .ul-footer {
     display: flex;
     justify-content: right;
-    height: 120px;
+    height: 150px;
     align-items: flex-end;
     flex-direction: row;
+    backdrop-filter: blur(2.5px);
+
 
 }
 
