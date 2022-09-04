@@ -9,7 +9,7 @@ html {
 
 body {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(83,41,7,1) 35%, rgba(191,86,0,1) 47%, rgba(191,86,0,1) 53%, rgba(83,41,7,1) 65%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(21, 7, 83) 30%, rgba(43, 82, 189) 45%, rgb(43, 82, 189) 55%, rgba(21, 7, 83) 70%, rgba(0,0,0,1) 100%);
 }
 
 header {
@@ -147,7 +147,7 @@ h2 {
 
 .card .front {
     transform: perspective (700px) rotateY(-180deg);
-    box-shadow: 0 5px 5px #000;
+    box-shadow: 1px 5px 5px 1px  #000;
     z-index: 1;
 }
 
@@ -161,6 +161,7 @@ h2 {
 .card .back {
     transform: perspective (700px) rotateY(180deg);
     text-align: center;
+    justify-content: space-between;
 }
 
 .card .fundacao {
@@ -168,7 +169,7 @@ h2 {
 }
 
 .card .naruto-sasuke {
-    background-color: rgb(16, 15, 112);
+    background-color: rgb(82, 21, 110);
 }
 
 .card .ataque-pain {
@@ -213,9 +214,8 @@ footer {
     background-image: url('../img/footerkonoha.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    border-top: solid 2px #fff;
+    border-top: solid 1px #cc6506;
     margin-top: 50px;
-
     
 }
 
