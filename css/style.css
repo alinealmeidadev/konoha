@@ -1,11 +1,3 @@
-/* 
-
-    Roboto
-    Skranji
-    Caesar+Dressing&display=swap" Changa:wght@800&display=swap" rel="stylesheet">
-    */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -90,7 +82,7 @@ header ul a:hover {
 }
 
 #cidade {
-    background-image: url('../img/gifkonoha.gif');
+    background-image: url('../img/konoha.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

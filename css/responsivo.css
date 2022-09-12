@@ -1,4 +1,3 @@
-
 @media (max-width: 1280px) {
 
     iframe {
@@ -13,10 +12,10 @@
 @media (max-width: 1024px) {
  
     header {
-        width: 250px;
         height: 400px;
-        position: absolute;
+        width: 250px;
         margin: 20px 40px;
+        position: absolute;
     }
 
     .logo {
@@ -41,9 +40,17 @@
         padding-top: 4px;
         padding-right: 5px;
     }
-       
+     
+    #cidade {
+        height: 100vh;
+    }
+
+    #curiosidade {
+        height: 57vh;
+    }
+
     h2 {
-        padding: 60px 0 55px 120px;
+        padding: 40px 0 40px 120px;
         font-size: 36px;
     }
 
@@ -69,7 +76,7 @@
     }
     
     #video {
-        height: 90vh;
+        height: 55vh;
     }
 
     iframe {
@@ -77,8 +84,8 @@
         width: 747px;
     }
     
-    #footer {
-        height: 10vh;
+    footer {
+        height: 5vh;
     }
 }
 
@@ -93,8 +100,8 @@
     }
    
     .curiosidades {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
     
     h2 {
@@ -109,10 +116,14 @@
         width: 575px;  
     }
 
+    .card .fundacao-img {
+        object-position: 0 25%; 
+    }
+
     .card .texto h3 {
         font-size: 36px;
-        line-height: 45px;
         letter-spacing: 5px;
+        line-height: 45px;
     }
     
     .card .texto {
